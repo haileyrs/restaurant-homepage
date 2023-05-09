@@ -5,9 +5,13 @@ function homePage() {
   const mainContent = document.createElement('div');
   mainContent.className = 'main';
   
-  const headline = document.createElement('h3');
-  headline.textContent = 'WARNING in webpack performance recommendations: You can limit the size of your bundles by using import() or require.ensure to lazy load some parts of your application. For more info visit https://webpack.js.org/guides/code-splitting/'
+  const headline = document.createElement('h2');
+  headline.textContent = 'Nothing beats watching the sunrise and sipping on your favorite coffee.'
+
+  const followLine = document.createElement('h3');
+  followLine.textContent = "We've got the coffee part covered!"
   mainContent.appendChild(headline)
+  mainContent.appendChild(followLine)
 
   tabDisplay.appendChild(mainContent)
 }

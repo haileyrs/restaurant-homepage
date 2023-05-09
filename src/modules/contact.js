@@ -5,7 +5,7 @@ function contactPage() {
   const contactPage = document.createElement('div');
   contactPage.className = 'contact-page';
   
-  const headline = document.createElement('h3');
+  const headline = document.createElement('h2');
   headline.textContent = 'Contact'
   contactPage.appendChild(headline)
   
