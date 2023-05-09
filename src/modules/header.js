@@ -19,8 +19,8 @@ function header() {
       let text = document.createElement('h3');
       text.textContent = t;
       text.className = t;
+      
       tab.appendChild(text)
-
       
       tabGrid.appendChild(tab)
     }

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alice&Montserrat:wght@200;400;700&display=swap');
 
 * {
   font-family: 'Montserrat', sans-serif;
@@ -7,6 +7,15 @@
 body, #content {
   margin: 0;
   /* background-color: #C04A82; */
+}
+
+svg {
+  height: 20px;
+  margin: 8px;
+}
+
+p {
+  color: #3b2239;
 }
 
 .header {
@@ -27,6 +36,7 @@ i {
 
 .header h1, .header h3 {
   color: #FDD36A;
+  font-family: 'Alice', serif;
 }
 
 .tab-grid {
@@ -37,23 +47,25 @@ i {
 }
 
 .background-div {
-  background: url('./sunrise.jpg');
-  width: 500px;
-  height: 600px;
+  background: url('./sunrise.jpg') no-repeat center center fixed;
+  background-size: cover;
+  padding-bottom: 32px;
 }
 
 .main, .menu-page, .contact-page {
-  background-color: #dc84498c;
+  background-color: #dc84497a;
   display: flex;
   flex-direction: column;
   align-items: center;
   height: fit-content;
-  margin: 32px;
-  padding: 32px;
+  margin: 32px 32px 16px 32px;
+  padding: 32px 32px 16px 32px;
+  text-align: center;
 }
 
 .main h2, .menu-page h2, .contact-page h2, h3 {
   color: #BE6DB7;
+  font-family: 'Alice', serif;
 }
 
 .Menu:hover, .Contact:hover, .Home:hover {
@@ -75,10 +87,21 @@ i {
   text-align: center;
 }
 
-.menu-item h5 {
+.menu-item p, .menu-item h5 {
   margin: 0;
+  color: #3b2239;
 }
 
-.menu-item p {
-  margin: 0;
+.contact-content h5 {
+  color: #3b2239;
 }
+
+.message, .location, .hours {
+  display: flex;
+  align-items: center;
+}
+
+.message h5:hover, .message svg:hover {
+  cursor: pointer;
+}
+
