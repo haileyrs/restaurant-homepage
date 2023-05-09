@@ -42,7 +42,7 @@ i {
   height: 600px;
 }
 
-.main {
+.main, .menu-page, .contact-page {
   background-color: #dc84498c;
   display: flex;
   height: 100vh;
@@ -50,6 +50,10 @@ i {
   padding: 16px;
 }
 
-.main h3 {
+.main h3, .menu-page h3, .contact-page h3 {
   color: #C04A82;
+}
+
+.Menu:hover, .Contact:hover, .Home:hover {
+  cursor:pointer;
 }
