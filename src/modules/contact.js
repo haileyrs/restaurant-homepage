@@ -1,4 +1,11 @@
 function contactPage() {
+  const homeBtn = document.querySelector('.Home');
+  const menuBtn = document.querySelector('.Menu');
+  const contactBtn = document.querySelector('.Contact');
+  homeBtn.classList.remove('active');
+  menuBtn.classList.remove('active');
+  contactBtn.classList.add('active');
+
   const tabDisplay = document.querySelector('.tab-content');
   tabDisplay.innerHTML = '';
 

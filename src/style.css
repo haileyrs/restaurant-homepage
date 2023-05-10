@@ -6,7 +6,6 @@
 
 body, #content {
   margin: 0;
-  /* background-color: #C04A82; */
 }
 
 svg {
@@ -28,12 +27,6 @@ p {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
-i {
-  height: 75px;
-  width: 75px;
-  color: #FDD36A;
-}
-
 .header h1, .header h3 {
   color: #FDD36A;
   font-family: 'Alice', serif;
@@ -47,6 +40,7 @@ i {
 }
 
 .background-div {
+  /* Photo by Ivana Cajina on Unsplash */
   background: url('./sunrise.jpg') no-repeat center center fixed;
   background-size: cover;
   padding-bottom: 32px;
@@ -66,10 +60,55 @@ i {
 .main h2, .menu-page h2, .contact-page h2, h3 {
   color: #BE6DB7;
   font-family: 'Alice', serif;
+  border-bottom: 2px solid transparent;
+  transition: transform 0.3s;
 }
 
-.Menu:hover, .Contact:hover, .Home:hover {
+.Menu:hover, .Contact:hover, .Home:hover, .active {
   cursor:pointer;
+  outline-width: 6px;
+  border-bottom: 2px solid #BE6DB7;
+}
+
+.perks-div {
+  margin: 64px 16px;
+  padding: 16px;
+  border-radius: 15px;
+  background-color: #C04A82;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  justify-items: center;
+}
+
+button {
+  width: fit-content;
+  height: fit-content;
+  padding: 16px 32px;
+  border-radius: 50px;
+  border: none;
+  font-size: medium;
+  background-color: #FDD36A;
+  color: #BE6DB7;
+  font-family: 'Alice', serif;
+  font-weight: 600;
+  transition-duration: 0.3s;
+  transition-property: background-color;
+}
+
+button:hover {
+  background-color: #dfba5e;
+}
+
+.coffee-div {
+  /* Photo by Fahmi Fakhrudin on Unsplash */
+  background: url('./coffee.jpg') no-repeat;
+  background-size: cover;
+  margin-bottom: 32px;
+  height: 30vh;
+  width: 60vw;
+  border-radius: 15px;
+  display: flex;
 }
 
 .menu-box {
@@ -92,7 +131,7 @@ i {
   color: #3b2239;
 }
 
-.contact-content h5 {
+h5 {
   color: #3b2239;
 }
 

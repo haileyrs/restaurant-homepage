@@ -2,9 +2,6 @@ function header() {
   const div = document.createElement('div');
   div.className = 'header'
 
-  // const icon = document.createElement('i');
-  // icon.className = 'fa-solid fa-sun-haze';
-  // div.appendChild(icon)
   const title = document.createElement('h1');
   title.textContent = 'Sunrise Cafe'
   div.appendChild(title)

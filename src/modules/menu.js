@@ -17,6 +17,13 @@ function menuItems(item) {
 }
 
 function menuPage() {
+  const homeBtn = document.querySelector('.Home');
+  const menuBtn = document.querySelector('.Menu');
+  const contactBtn = document.querySelector('.Contact');
+  homeBtn.classList.remove('active');
+  menuBtn.classList.add('active');
+  contactBtn.classList.remove('active');
+
   const tabDisplay = document.querySelector('.tab-content');
   tabDisplay.innerHTML = '';
 

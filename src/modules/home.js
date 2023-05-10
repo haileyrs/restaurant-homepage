@@ -1,11 +1,17 @@
 function homePage() {
-  
+  const homeBtn = document.querySelector('.Home');
+  const menuBtn = document.querySelector('.Menu');
+  const contactBtn = document.querySelector('.Contact');
+  homeBtn.classList.add('active');
+  menuBtn.classList.remove('active');
+  contactBtn.classList.remove('active');
 
   const tabDisplay = document.querySelector(".tab-content");
   tabDisplay.innerHTML = "";
 
   const mainContent = document.createElement("div");
   mainContent.className = "main";
+  mainContent.style.height = '100vh'
 
   const headline = document.createElement("h2");
   headline.textContent =
@@ -24,6 +30,23 @@ function homePage() {
   mainContent.appendChild(followLine);
   mainContent.appendChild(description);
   mainContent.appendChild(moreDesc);
+
+  const perksDiv = document.createElement('div');
+  perksDiv.className = 'perks-div';
+  perksDiv.innerHTML = `
+  <div>
+    <h2>Earn Points on Your Next Purchase</h2>
+    <h5>Ask your barista how you could get free coffee and snacks by joining our rewards program!</h5>
+  </div>
+  <button>Sign Up Now</button>
+  `
+
+  mainContent.appendChild(perksDiv);
+
+  const coffeeImage = document.createElement('div');
+  coffeeImage.className = 'coffee-div'
+
+  mainContent.appendChild(coffeeImage);
 
   tabDisplay.appendChild(mainContent);
 }
